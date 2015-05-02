@@ -1,0 +1,5 @@
+This web application displays the Champions in League of Legends that are currently free to play. Champions normally need to be purchased using real money or through an earned in-game currency. However, Riot also offers a rotation of Champions that are entirely free that week.
+
+Using Riot Games' API, queries are sent from my server every hour to receive all the data regarding the current free week rotation. If this rotation is deemed new, it is stored in a MySQL database. When the user visits the site, they arrive at the IndexServlet, which uses a Database Access Object to retrieve current Champion data from the database and then forwards the request to a JSP. This JSP renders the page using HTML, JSTL, and CSS. Javascript is used to switch between Champion data client-side.
+
+Website may be available at http://stevesite.me

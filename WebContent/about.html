@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <title>About</title>
+</head>    
+    
+<body>
+  <div id="wrapper">
+      
+  <header>
+	  <h1>League of Legends: Free Week Champions</h1>
+  </header>
+  
+  <nav id="horzNav">
+    <a href="index.do">Home</a>
+	<a href="about.html">About</a>
+  </nav>
+    
+  <div id="main">
+
+	<p>This web application displays the Champions in League of Legends that are currently free to play. Champions normally need to be purchased
+	using real money or through an earned in-game currency. However, Riot also offers a rotation of Champions that are entirely free that week.</p>
+	
+	<p>Using Riot Games' API, queries are sent from my server every hour to receive all the data regarding the current free week
+	rotation. If this rotation is deemed new, it is stored in a MySQL database. When the user visits the site, they arrive at
+	the IndexServlet, which uses a Database Access Object to retrieve current Champion data from the database and then forwards the
+	request to a JSP. This JSP renders the page using HTML, JSTL, and CSS. Javascript is used to switch between Champion
+	data client-side.</p>
+	
+	<p>Below are the diagrams I included in my design document.</p>
+    
+    <h2>Components/Architecture</h2>
+    <img src ="images/components.png" alt="components.png" width="1150px" height="720px">
+    
+    <h2>Class Diagram</h2>
+    
+    <img src ="images/classDiagram.png" alt="classDiagram.png" width="1150px" height="720px">
+  </div>
+  
+  <footer>
+  	Developed for IST 411 by Steven Brown<br>
+	<small>&copy Copyright 2015</small>  	
+  </footer>
+  
+  </div>
+</body>
+    
+</html>
